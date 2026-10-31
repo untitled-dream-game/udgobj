@@ -29,7 +29,7 @@ int main(int argc, char *argv[])
 	printf("%s\n", exePathBuffer);
 	
 	
-	char concatenatedFilePath[strlen(exePathBuffer) + 256];
+	char concatenatedFilePath[1028];
 	snprintf(concatenatedFilePath, strlen(exePathBuffer) + 256, "%s%s%s", exePathBuffer, "\\resources", "\\Cube.obj");
 	free(exePathBuffer);
 	
