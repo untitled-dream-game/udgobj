@@ -10,12 +10,11 @@ set(CMAKE_C_EXTENSIONS OFF)
 
 add_library(udgObj
 	src/udgobj.c
-	src/udgobj.h
 )
 
 target_include_directories(udgObj
 	PUBLIC
-	"${PROJECT_SOURCE_DIR}/src"
+	"${PROJECT_SOURCE_DIR}/include"
 )
 
 if (UDGOBJ_BUILD_EXAMPLES)
